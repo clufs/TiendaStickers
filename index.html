@@ -2,10 +2,130 @@
 <html lang="es">
   <head>
     <meta charset="UTF-8" />
-    <title>Mi Página HTML</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="/styles/home.css" />
+    <link rel="stylesheet" href="/styles/sticker.css" />
+    <link rel="stylesheet" href="/styles/main.css" />
+
+    <link rel="stylesheet" href="/styles/nav.css" />
+
+    <title>Stickerazo | Categorías Calcomanías</title>
   </head>
+  <nav class="navbar">
+    <a href="/index.html" class="logo">Stickerazo</a>
+
+    <div class="icons">
+      <a href="/pages/search.html">
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          width="26"
+          height="26"
+          viewBox="0 0 24 24"
+          fill="none"
+          stroke="currentColor"
+          stroke-width="2"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+          style="view-transition-name: search"
+        >
+          <circle cx="11" cy="11" r="8"></circle>
+          <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+        </svg>
+      </a>
+      <a href="/pages/cart.html">
+        <span style="view-transition-name: cartlabel">CARRITO</span>
+        <span style="view-transition-name: cartquantity">[2]</span>
+      </a>
+    </div>
+  </nav>
   <body>
-    <h1>¡Hola, mundo!</h1>
-    <p>Esta es una página de ejemplo en HTML.</p>
+    <div class="gallery-container">
+      <div class="gallery">
+        <div class="item wide">
+          <img src="https://picsum.photos/id/1015/600/400" /><span
+            >Naturaleza</span
+          >
+        </div>
+        <div class="item">
+          <a href="/category/index.html">
+            <img src="https://picsum.photos/id/1025/400/400" /><span
+              >Simpsons</span
+            >
+          </a>
+        </div>
+        <div class="item tall">
+          <img src="https://picsum.photos/id/1003/400/600" /><span>Frases</span>
+        </div>
+        <div class="item">
+          <img src="https://picsum.photos/id/1035/400/400" /><span>Viajes</span>
+        </div>
+
+        <div class="item big">
+          <a href="/pages/category.html">
+            <img
+              style="view-transition-name: title1"
+              src="/public/imagen1.jpg"
+            /><span>Arte</span>
+          </a>
+        </div>
+        <div class="item">
+          <img src="https://picsum.photos/id/1059/400/400" /><span>Retro</span>
+        </div>
+        <div class="item wide">
+          <img src="https://picsum.photos/id/1069/600/400" /><span>Geek</span>
+        </div>
+        <div class="item">
+          <img src="https://picsum.photos/id/1074/400/400" /><span
+            >Deportes</span
+          >
+        </div>
+        <div class="item tall">
+          <img src="https://picsum.photos/id/1084/400/600" /><span>Música</span>
+        </div>
+        <div class="item">
+          <img src="https://picsum.photos/id/109/400/400" /><span>Flores</span>
+        </div>
+        <div class="item big">
+          <img src="https://picsum.photos/id/110/800/800" /><span>Comida</span>
+        </div>
+        <div class="item">
+          <img src="https://picsum.photos/id/111/400/400" /><span>Cómics</span>
+        </div>
+        <div class="item wide">
+          <img src="https://picsum.photos/id/112/600/400" /><span>Coches</span>
+        </div>
+        <div class="item">
+          <img src="https://picsum.photos/id/113/400/400" /><span
+            >Películas</span
+          >
+        </div>
+        <div class="item tall">
+          <img src="https://picsum.photos/id/114/400/600" /><span>Series</span>
+        </div>
+        <div class="item">
+          <img src="https://picsum.photos/id/115/400/400" /><span
+            >Ciudades</span
+          >
+        </div>
+        <div class="item big">
+          <img src="https://picsum.photos/id/116/800/800" /><span
+            >Videojuegos</span
+          >
+        </div>
+        <div class="item">
+          <img src="https://picsum.photos/id/117/400/400" /><span
+            >Tecnología</span
+          >
+        </div>
+        <div class="item wide">
+          <img src="https://picsum.photos/id/118/600/400" /><span
+            >Minimalista</span
+          >
+        </div>
+        <div class="item">
+          <img src="https://picsum.photos/id/119/400/400" /><span>Vintage</span>
+        </div>
+      </div>
+    </div>
   </body>
 </html>
