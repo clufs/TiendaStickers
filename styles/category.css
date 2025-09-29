@@ -28,6 +28,7 @@
 
 .item span {
   position: absolute;
+  display: none;
   bottom: 10px;
   left: 10px;
   background: rgba(0, 0, 0, 0.6);
@@ -53,8 +54,10 @@
 
   .item.wide {
     grid-column: span 2;
+    grid-row: span 2;
   }
   .item.tall {
+    grid-column: span 1;
     grid-row: span 1;
   }
   .item.big {
@@ -76,6 +79,7 @@
   .item-cart h2 {
     /* color: #fafafa; */
     font-weight: 100;
+
     text-transform: uppercase;
     text-align: right;
     font-size: 4vh;

@@ -1,0 +1,83 @@
+.product-container {
+  display: grid;
+  width: 100%;
+  grid-template-columns: 1fr 1fr;
+}
+
+.product-image-container {
+  height: 80vh;
+  width: 100%;
+  /* background: #000; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.product-image {
+  width: 600px;
+}
+
+.product-details-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+  align-items: center;
+
+  width: 100%;
+}
+
+.product-details {
+  width: 70%;
+}
+
+.product-route {
+  text-align: center;
+}
+
+.product-description {
+  text-align: center;
+}
+
+/* parte del selector de las cantidades */
+.quantity-selector-container {
+  display: inline-flex;
+  align-items: center;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  overflow: hidden;
+  margin: 1rem 0;
+}
+
+.quantity-selector-container input {
+  width: 60px;
+  text-align: center;
+  font-size: 1rem;
+  border: none;
+  outline: none;
+  padding: 0.5rem;
+}
+
+/* Esto es par que se vea mejor el selector de cantidades */
+.quantity-selector-container input::-webkit-outer-spin-button,
+.quantity-selector-container input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+.qty-btn {
+  background: #f5f5f5;
+  border: none;
+  padding: 0.5rem 1rem;
+  font-size: 1.2rem;
+  cursor: pointer;
+  transition: background 0.2s ease;
+}
+
+.qty-btn:hover {
+  background: #e0e0e0;
+}
+
+.qty-btn:active {
+  background: #ccc;
+}

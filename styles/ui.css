@@ -1,0 +1,23 @@
+/* Titulo */
+.title {
+  font-size: 80px;
+  text-align: center;
+}
+/* Botton */
+.btn-primary {
+  width: 100%;
+  padding: 0.8rem;
+  padding-top: 1.2rem;
+  padding-bottom: 1.2rem;
+  font-size: 1rem;
+  border: none;
+  border-radius: 6px;
+  background: black;
+  color: white;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+
+.btn-primary:hover {
+  background: #333;
+}

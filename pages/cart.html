@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="/styles/main.css" />
     <link rel="stylesheet" href="/styles/nav.css" />
     <link rel="stylesheet" href="/styles/cart.css" />
+    <link rel="stylesheet" href="/styles/ui.css" />
   </head>
 
   <header>
@@ -36,14 +37,62 @@
   </header>
 
   <body>
-    <div class="cart-container">
-      <div class="cart-titles-container">
-        <span style="view-transition-name: cartlabel" class="cart-title"
-          >Carrito</span
-        >
-        <span class="cart-item-quantity">
-          <span style="view-transition-name: cartquantity">2</span> unidades
-        </span>
+    <div class="con">
+      <!-- parte izquiera -->
+      <div class="cart-container">
+        <div>
+          <div class="cart-titles-container">
+            <a href="/index.html">Volver al inicio</a>
+            <span class="cart-title">Carrito</span>
+            <!-- <span class="cart-item-quantity">
+              <span style="view-transition-name: cartquantity">2</span> unidades
+            </span> -->
+          </div>
+          <div class="cart-summary">
+            <div class="item">
+              <div class="thumb"></div>
+              <div class="info">
+                <a href="#"><p class="name">Calcomanía Cactus</p></a>
+                <p class="qty">Cantidad: 1</p>
+              </div>
+            </div>
+
+            <div class="item">
+              <div class="thumb"></div>
+              <div class="info">
+                <a href="#">
+                  <p class="name">Calcomanía Ruta 40</p>
+                </a>
+                <p class="qty">Cantidad: 2</p>
+              </div>
+            </div>
+
+            <div class="item">
+              <div class="thumb"></div>
+              <div class="info">
+                <a href="#"><p class="name">Calcomanía Llama</p></a>
+                <p class="qty">Cantidad: 1</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- parte izquiera -->
+      <div class="cart-details-container">
+        <!-- <h1>Detalle</h1> -->
+
+        <div class="detail-row">
+          <span>Cantidad de calcomanías</span>
+          <span>4</span>
+        </div>
+
+        <div class="detail-row">
+          <span>Subtotal</span>
+          <span>$2.000</span>
+        </div>
+
+        <button class="btn-primary">Continuar</button>
       </div>
     </div>
   </body>
