@@ -1,16 +1,19 @@
 .con {
   display: grid;
   width: 100%;
-  grid-template-columns: 1fr 1fr;
-  gap: 1rem;
+  max-width: 1200px;
+  margin: 0 auto;
+  grid-template-columns: 1.5fr 1fr;
+  gap: 1.5rem;
   padding: 1rem;
+  box-sizing: border-box;
 }
 
 .cart-container {
   width: 100%;
   display: flex;
   justify-content: center;
-  align-items: center;
+  align-items: flex-start;
 }
 
 .cart-titles-container {
@@ -19,22 +22,14 @@
 }
 
 .cart-title {
-  font-size: 100px;
-  margin-bottom: -20px;
+  font-size: 3rem;
+  margin-bottom: 0.5rem;
 }
 
 .cart-item-quantity {
-  font-size: 30px;
+  font-size: 1.5rem;
   font-weight: 300;
-  margin-bottom: -20px;
-}
-
-/*? detalles del carrito  */
-.cart-summary {
-  margin-top: 2rem;
-  display: flex;
-  flex-direction: column;
-  gap: 1rem;
+  margin-bottom: 1rem;
 }
 
 .item {
@@ -42,13 +37,13 @@
   align-items: center;
   gap: 1rem;
   border-bottom: 1px solid #ddd;
-  padding-bottom: 0.5rem;
+  padding: 0.5rem 0;
 }
 
 .thumb {
   width: 50px;
   height: 50px;
-  background: #ccc; /* cuadrado que simula la foto */
+  background: #ccc;
   border-radius: 4px;
   flex-shrink: 0;
 }
@@ -70,12 +65,12 @@
   color: #555;
 }
 
-/*? Subtotal  */
-
+/* Resumen */
 .cart-details-container {
   max-width: 400px;
   height: fit-content;
   border: 1px solid #ddd;
+
   border-radius: 8px;
   padding: 1.5rem;
   background: #fafafa;
@@ -95,4 +90,34 @@
 
 .detail-row span:last-child {
   font-weight: bold;
+}
+
+@media (max-width: 768px) {
+  .cart-container {
+    justify-content: start;
+    padding: 0.2rem;
+  }
+
+  .cart-summary {
+    width: 100%;
+  }
+
+  .con {
+    grid-template-columns: 1fr;
+  }
+
+  .cart-details-container {
+    max-width: 100%;
+    margin-top: 2rem;
+  }
+
+  .cart-title {
+    font-size: 2rem;
+    text-align: start;
+  }
+
+  .cart-item-quantity {
+    font-size: 1.2rem;
+    text-align: center;
+  }
 }
