@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Checkout</title>
+
+    <link rel="stylesheet" href="/styles/checkout.css" />
+    <link rel="stylesheet" href="/styles/main.css" />
+    <link rel="stylesheet" href="/styles/ui.css" />
+    <link rel="stylesheet" href="/styles/cart.css" />
+  </head>
+  <header>
+    <nav class="checkout-nav">
+      <a href="/index.html">
+        <img src="/public/logo.svg" alt="" />
+      </a>
+    </nav>
+  </header>
+  <body>
+    <div class="checkout-container">
+      <!-- informacion de envio -->
+      <div class="ship-payment-container">
+        <div class="address-container">
+          <label for="email">Ingrese su email</label>
+          <input type="email" name="email" id="email" />
+
+          <div style="display: flex; margin-top: 10px">
+            <input type="checkbox" name="remember" id="email" />
+            <label for="remember"
+              >Deseo que recuerden el email para porder ofrecerme ofertas y
+              descuentos.</label
+            >
+          </div>
+        </div>
+
+        <div class="ship-container">
+          <h2>Elija el metodo de envio</h2>
+
+          <div class="options-container">
+            <div
+              style="width: 100%; display: flex; justify-content: space-between"
+            >
+              <label for="store">Retiro en tienda</label>
+              <input type="radio" name="store" checked />
+            </div>
+            <p>
+              Direccion: Barrio Chijra 555, San Salvador de Jujuy, Jujuy <br />
+              Porfavor cordinar con nosotros para la entrega.
+            </p>
+          </div>
+
+          <div style="margin: 1rem"></div>
+
+          <div class="options-container">
+            <div
+              style="width: 100%; display: flex; justify-content: space-between"
+            >
+              <label for="standar">Envio por Oca</label>
+              <input type="radio" name="standar" />
+            </div>
+
+            <p>
+              Los envios los hacemos por OCA la entrega generalmente tarda
+              <strong>5</strong>
+              dias habiles.
+            </p>
+          </div>
+        </div>
+
+        <div class="ship-container">
+          <h2>Elija el metodo de pago</h2>
+
+          <div class="options-container">
+            <div
+              style="width: 100%; display: flex; justify-content: space-between"
+            >
+              <label for="store">Transferencia </label>
+              <input type="radio" name="store" checked />
+            </div>
+            <p>
+              Pagar con transferencia tiene un
+              <strong>15% de descuento</strong>.
+            </p>
+          </div>
+
+          <div style="margin: 1rem"></div>
+
+          <div class="options-container" style="color: grey">
+            <div
+              style="width: 100%; display: flex; justify-content: space-between"
+            >
+              <label for="standar">Tarjeta</label>
+              <input type="radio" name="standar" disabled />
+            </div>
+
+            <p>Proximamente...</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- summary -->
+
+      <div class="summary-container">
+        <div class="cart-details-container">
+          <h1>Resumen</h1>
+
+          <div class="cart-summary">
+            <div class="item">
+              <div class="thumb"></div>
+              <div class="info">
+                <p class="name">Calcomanía Cactus</p>
+                <p class="qty">Cantidad: 1</p>
+                <p class="qty">$500</p>
+              </div>
+            </div>
+
+            <div class="item">
+              <div class="thumb"></div>
+              <div class="info">
+                <p class="name">Calcomanía Ruta 40</p>
+
+                <p class="qty">Cantidad: 2</p>
+                <p class="qty">$1000</p>
+              </div>
+            </div>
+
+            <div class="item">
+              <div class="thumb"></div>
+              <div class="info">
+                <p class="name">Calcomanía Llama</p>
+                <p class="qty">Cantidad: 1</p>
+                <p class="qty">$500</p>
+              </div>
+            </div>
+          </div>
+
+          <div style="margin-top: 2rem"></div>
+
+          <div class="detail-row">
+            <span>Cantidad de calcomanías</span>
+            <span>4 unidades</span>
+          </div>
+
+          <div class="detail-row">
+            <span>Subtotal</span>
+            <span>$2.000</span>
+          </div>
+
+          <div class="detail-row">
+            <span>Envio</span>
+            <span>Retiro en tienda</span>
+          </div>
+
+          <div class="detail-row">
+            <span>Descuento(15%)</span>
+            <span>-$150</span>
+          </div>
+
+          <div style="height: 1px; margin: 10px"></div>
+
+          <div class="detail-row" style="font-size: 2rem">
+            <span>Total</span>
+            <span>$1.850</span>
+          </div>
+
+          <a href="/pages/checkout.html">
+            <button class="btn-primary">Finalizar la compra</button>
+          </a>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

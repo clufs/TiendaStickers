@@ -1,9 +1,20 @@
+.c {
+  width: auto;
+  height: 80vh;
+  /* background: #000; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 .return-text-mobile {
   display: none;
 }
+
 .product-container {
   display: grid;
   width: 100%;
+
   max-width: 1300px;
   margin-top: 2rem;
 
@@ -40,12 +51,24 @@
 }
 
 @media (max-width: 768px) {
+  .c {
+    width: auto;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
   .product-image-container {
     width: 95%;
     display: flex;
     justify-content: center;
     align-items: center;
     padding: 1rem;
+  }
+
+  .title {
+    font-size: 2rem;
   }
 
   .btn-primary {

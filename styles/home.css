@@ -3,7 +3,7 @@
   grid-template-columns: 1fr; /* Mobile: 1 columna */
   grid-auto-rows: 200px;
   gap: 10px;
-  width: 100%;
+  width: auto;
   max-width: 1200px;
   padding: 15px;
 }

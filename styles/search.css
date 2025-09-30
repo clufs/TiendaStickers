@@ -42,3 +42,10 @@
 
   justify-content: center;
 }
+
+@media (max-width: 768px) {
+  .search-form-container {
+    padding: 2rem;
+    width: auto;
+  }
+}
