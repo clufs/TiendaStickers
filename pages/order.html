@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Gracias por tu compra</title>
+    <link rel="stylesheet" href="/styles/main.css" />
+    <link rel="stylesheet" href="/styles/order.css" />
+    <link rel="stylesheet" href="/styles/checkout.css" />
+    <link rel="stylesheet" href="/styles/ui.css" />
+  </head>
+  <body>
+    <header>
+      <nav class="checkout-nav">
+        <a href="/index.html">
+          <img src="/public/logo.svg" alt="Logo" />
+        </a>
+      </nav>
+    </header>
+
+    <main class="thankyou-container">
+      <section class="thankyou-message">
+        <h1>¡Gracias por tu compra!</h1>
+        <p>Tu pedido ha sido confirmado correctamente.</p>
+      </section>
+
+      <section class="order-details">
+        <h2>Detalles de la Orden</h2>
+        <ul>
+          <li><strong>Número de orden:</strong> #4400</li>
+          <li><strong>Cliente:</strong> Nahuel Bautista</li>
+          <li><strong>Método de pago:</strong> Efectivo en tienda</li>
+          <li><strong>Método de entrega:</strong> Retiro en tienda</li>
+          <li><strong>Fecha de retiro:</strong> 30/09/2025</li>
+        </ul>
+      </section>
+
+      <section class="products">
+        <h2>Productos</h2>
+        <table>
+          <thead>
+            <tr>
+              <th>Producto</th>
+              <th>Cantidad</th>
+              <th>Precio</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Sticker Cactus Norte</td>
+              <td>2</td>
+              <td>$800</td>
+            </tr>
+            <tr>
+              <td>Sticker Ruta 40</td>
+              <td>1</td>
+              <td>$450</td>
+            </tr>
+          </tbody>
+          <tfoot>
+            <tr>
+              <td colspan="2"><strong>Total</strong></td>
+              <td><strong>$1.250</strong></td>
+            </tr>
+          </tfoot>
+        </table>
+      </section>
+
+      <section class="instructions">
+        <h2>Instrucciones</h2>
+        <p>
+          Puedes pasar a retirar tu compra en nuestra tienda a partir de la
+          fecha indicada. Recuerda traer el número de orden
+          <strong>#4400</strong> y abonar el total en efectivo.
+        </p>
+      </section>
+
+      <a href="/index.html">
+        <button class="btn-primary">Volver al inicio</button>
+      </a>
+    </main>
+  </body>
+</html>
