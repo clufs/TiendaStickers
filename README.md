@@ -31,4 +31,4 @@ La idea principal es crear una tienda online moderna para gestionar y vender sti
 
 ## 👨‍💻 Autor
 
-Proyecto creado por **Mauro Nahuel Bautista**  
+Proyecto creado por **Mauro Nahuel Bautista** y uno que otro ayudin de ChatGPT.
