@@ -17,10 +17,11 @@ La idea principal es crear una tienda online moderna para gestionar y vender sti
 ## 🗂️ Estructura del Proyecto
 
 📦 stickerazo/
-┣ 📂 pages/ # Páginas HTML internas
-┣ 📂 styles/ # Archivos CSS modulares
-┣ 📂 public/ # Imágenes y assets
-┗ 📜 index.html # Home
+ ┣ 📂 pages/        # Páginas HTML internas
+ ┣ 📂 styles/       # Archivos CSS modulares
+ ┣ 📂 public/       # Imágenes y assets
+ ┗ 📜 index.html    # Home
+ 
 ## 🚀 Cómo usarlo
 
 1. Cloná el repositorio o descargá el ZIP.  
