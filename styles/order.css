@@ -1,18 +1,3 @@
-/* ====== NAV ====== */
-.checkout-nav {
-  width: auto;
-  display: flex;
-  padding-top: 10px;
-  padding-bottom: 15px;
-  justify-content: center;
-  align-items: center;
-  box-shadow: 0 1px 15px rgba(0, 0, 0, 0.3);
-}
-
-.checkout-nav a img {
-  width: 60px;
-}
-
 .thankyou-container {
   display: grid;
   grid-template-columns: 1fr;
